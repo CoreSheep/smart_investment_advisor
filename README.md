@@ -2,6 +2,8 @@
 
 A simple investment advisor application that provides personalized portfolio recommendations based on user's risk profile and investment goals.
 
+![screenshot.png](screenshot.png)
+
 ## Features
 
 - User-friendly interface for inputting investment preferences
@@ -11,10 +13,10 @@ A simple investment advisor application that provides personalized portfolio rec
 
 ## Setup
 
-1. Create a virtual environment (recommended):
+1. Create a conda environment:
 ```bash
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
+conda create -n smart_investment_advisor python=3.9
+conda activate smart_investment_advisor
 ```
 
 2. Install dependencies:
@@ -29,7 +31,11 @@ OPENAI_API_KEY=your_api_key_here
 
 ## Running the Application
 
-1. Make sure your virtual environment is activated
+1. Make sure your conda environment is activated:
+```bash
+conda activate smart_investment_advisor
+```
+
 2. Run the Streamlit app:
 ```bash
 streamlit run app.py
